@@ -1,4 +1,4 @@
-# GGR472 Week 6 demo: Introducing expressions and events with Mapbox GL JS
+# GGR472 Lab 3: Simple expressions and events with Mapbox GL JS
 
 This repository contains JavaScript files and resources to help you learn about using the Mapbox GL JS library to filter data, update paint properties, and handle events on interactive maps.
 
@@ -6,21 +6,19 @@ This repository contains JavaScript files and resources to help you learn about 
 
 - `index.html`: HTML file to render the map and include necessary dependencies
 - `style.css`: CSS file for positioning the map interface
-- `script-expressions.js`: JavaScript file containing code for filtering data and updating paint properties
-- `script-events.js`: JavaScript file containing code for handling events
-- `script-events-adv.js`: JavaScript file containing code for handling events using the state of a map feature
-- `Data folder`: Sample GeoJSON data for demonstration purposes
+- `script-expressions.js`: JavaScript file containing code for filtering data and updating paint properties, classifying properties, and amp controls
+- `Data folder`: Toronto Rinks GeoJSON data for demonstration purposes
 
 ## Objectives
 
 This code is provided to help with learning the following concepts:
 
-1. **Introduction to Expressions with Mapbox GL JS (`script-expressions.js`)**
+1. **Classifying data/symbology**
    - Use data and conditional expressions to filter data layers on the map
-   - Update paint properties dynamically based on filtered data, threshold values (steps), and zoom level
+   - Update paint properties dynamically based on filtered data
 
-2. **Handling Events with Mapbox GL JS (`script-events.js` and `script-events-adv.js`)**
-   - Implement interactive features such as clicking on or mousing over map features
+2. **Handling Events with Mapbox GL JS**
+   - Implement interactive features such as clicking on map features
    - Display data attributes in pop-ups when users interact with map features
    - Change the appearance of map features in response to user interaction
    
