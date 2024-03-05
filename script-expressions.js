@@ -24,29 +24,29 @@ map.addControl(new mapboxgl.NavigationControl());
 map.on('load', () => {
 
     //Add datasource from GeoJSON
-    map.addSource('toronto-mus', {
+    map.addSource('toronto-rinks', {
         type: 'geojson',
-        data: 'https://raw.githubusercontent.com/smith-lg/ggr472-wk6-demo/main/data/torontomusicvenues.geojson'
-        //'https://smith-lg.github.io/ggr472-wk6-demo/data/torontomusicvenues.geojson'
+        data: 'https://github.com/SVG3141/Lab3/blob/main/data/indoor-ice-rinks-data.geojson'
+       
     });
 
     map.addLayer({
-        'id': 'toronto-mus-pnts',
+        'id': 'toronto-ice-rinks',
         'type': 'circle',
-        'source': 'toronto-mus',
+        'source': 'toronto-rinks',
         'paint': {
             'circle-radius': 5,
-            'circle-color': 'red',
+            'circle-color': 'blue',
         }
     });
 
     //Draw GeoJSON labels using 'name' property
     map.addLayer({
-        'id': 'toronto-mus-labels',
+        'id': 'toronto-rink-labels',
         'type': 'symbol',
-        'source': 'toronto-mus',
+        'source': 'toronto-rinks',
         'layout': {
-            'text-field': ['get', 'name'],
+            'text-field': ['get', 'Parent Asset Name'],
             'text-variable-anchor': ['bottom'],
             'text-radial-offset': 0.5,
             'text-justify': 'auto'
